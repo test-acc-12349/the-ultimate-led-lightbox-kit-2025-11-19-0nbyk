@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Ultimate LED Lightbox Kit - Professional Photography Equipment. Studio Quality, Portable Setup, Energy Efficient.">
+    <meta name="keywords" content="LED Lightbox, Photography Kit, Professional Lighting, Portable Studio">
+    <meta name="author" content="LED Lightbox Kit">
+    <meta property="og:title" content="The Ultimate LED Lightbox Kit">
+    <meta property="og:description" content="Professional Photography Equipment - Studio Quality, Portable Setup, Energy Efficient.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lpk.com">
+    <title>The Ultimate LED Lightbox Kit - Professional Photography Equipment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        
+        .feature-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .btn-primary {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .faq-item {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-item.active .faq-content {
+            max-height: 500px;
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .faq-content {
+            max-height: 0;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        .mobile-menu {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .announcement-bar {
+            background: linear-gradient(90deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+        
+        .nav-link {
+            transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        
+        .benefit-image {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .benefit-image:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    
+    <!-- Announcement Bar -->
+    <div class="announcement-bar text-white text-center py-2 px-4">
+        <p class="text-sm font-medium">🚚 Fast Worldwide Shipping (5 days delivery) | 100% Satisfaction Guarantee</p>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-lightbulb text-blue-600 mr-2"></i>LPK
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="#features" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Features</a>
+                    <a href="#benefits" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Benefits</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 font-medium">About</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Testimonials</a>
+                    <a href="#faq" class="nav-link text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+                </nav>
+
+                <!-- Right Side Items -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="p-2 text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-search text-lg"></i>
+                    </button>
+                    <a href="https://lpk.com" class="btn-primary bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold shadow-md hover:shadow-lg">
+                        Buy Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200 pb-4">
+                <nav class="flex flex-col space-y-3 px-4 py-4">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                    <a href="https://lpk.com" class="btn-primary bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold text-center shadow-md hover:shadow-lg mt-2">
+                        Buy Now
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="LED Lightbox Kit Hero" class="w-full h-full object-cover">
+            <div class="gradient-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                The Ultimate LED Lightbox Kit
+            </h1>
+            <p class="text-xl sm:text-2xl md:text-3xl text-gray-100 mb-8 font-light leading-relaxed">
+                Professional Photography Equipment for Studio Quality Results
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://lpk.com" class="btn-primary bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Shop Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <button class="btn-primary bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Learn More <i class="fas fa-play ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Powerful Features
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Everything you need for professional photography in one complete kit
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+                <!-- Feature 1: Professional Photography -->
+                <div class="feature-card bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200 hover:shadow-xl">
+                    <div class="mb-6 flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full">
+                        <i class="fas fa-camera text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Professional Photography</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Advanced LED technology delivers consistent, flicker-free lighting with color accuracy that rivals professional studio setups. Perfect for product photography, portraits, and video content creation.
+                    </p>
+                    <div class="mt-4 flex items-center text-blue-600 font-semibold">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Portable Setup -->
+                <div class="feature-card bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border border-purple-200 hover:shadow-xl">
+                    <div class="mb-6 flex items-center justify-center w-16 h-16 bg-purple-600 rounded-full">
+                        <i class="fas fa-briefcase text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Portable Setup</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Lightweight and compact design that fits in any bag or travel case. Set up your professional studio anywhere in minutes. Take your photography business on the road with ease and confidence.
+                    </p>
+                    <div class="mt-4 flex items-center text-purple-600 font-semibold">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Energy Efficient -->
+                <div class="feature-card bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border border-green-200 hover:shadow-xl">
+                    <div class="mb-6 flex items-center justify-center w-16 h-16 bg-green-600 rounded-full">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Energy Efficient</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        LED technology uses 80% less energy than traditional lighting. Runs cool, reducing heat during long shoots. Lower operating costs and environmentally responsible photography equipment.
+                    </p>
+                    <div class="mt-4 flex items-center text-green-600 font-semibold">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Why Choose Our LED Lightbox Kit?
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Transform your photography with professional-grade equipment designed for creators
+                </p>
+            </div>
+
+            <!-- Benefit 1: Studio Quality (Text Left) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-16 bg-white p-8 md:p-12 rounded-2xl">
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Studio Quality Light</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        Achieve professional studio results without the studio price tag. Our LED lightbox kit delivers consistent, high-quality lighting that matches industry standards used by top photographers worldwide.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        With adjustable color temperature and brightness levels, you have complete control over your lighting setup. Create the perfect ambiance for any type of photography, from product shots to professional portraits.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 text-lg"></i>
+                            <span class="font-medium">5600K color temperature for daylight</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 text-lg"></i>
+                            <span class="font-medium">CRI 95+ for accurate color reproduction</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 text-lg"></i>
+                            <span class="font-medium">Flicker-free technology for video</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Studio Quality LED Lighting" class="benefit-image w-full h-full object-cover rounded-xl">
+                </div>
+            </div>
+
+            <!-- Benefit 2: Anywhere (Text Right) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-16 bg-white p-8 md:p-12 rounded-2xl">
+                <div class="overflow-hidden rounded-xl order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Portable Photography Kit" class="benefit-image w-full h-full object-cover rounded-xl">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Take Your Studio Anywhere</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        Never compromise on quality due to location constraints. Our portable LED lightbox kit weighs just 2kg and fits into a compact carrying case, making it perfect for on-location shoots, travel photography, and remote client sessions.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Whether you're shooting in a client's office, at an outdoor venue, or in remote locations, you'll have professional lighting at your fingertips. Set up in under 5 minutes and start creating stunning content immediately.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-purple-600 mr-3 text-lg"></i>
+                            <span class="font-medium">Compact carrying case included</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-purple-600 mr-3 text-lg"></i>
+                            <span class="font-medium">Works on battery or AC power</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-purple-600 mr-3 text-lg"></i>
+                            <span class="font-medium">Compatible with all camera types</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Benefit 3: Energy Saving (Text Left) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-8 md:p-12 rounded-2xl">
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Energy Saving Technology</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        Save money on electricity while reducing your environmental impact. Our LED technology consumes 80% less energy compared to traditional halogen lighting, translating to significant cost savings over time.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        The advanced thermal management system keeps the unit cool even during extended shooting sessions, eliminating the need for expensive cooling equipment. Perfect for sustainable photography practices and long studio hours.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3 text-lg"></i>
+                            <span class="font-medium">Only 50W power consumption</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3 text-lg"></i>
+                            <span class="font-medium">Cool operation - no heat buildup</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3 text-lg"></i>
+                            <span class="font-medium">Eco-friendly and sustainable</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Energy Efficient LED Technology" class="benefit-image w-full h-full object-cover rounded-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 md:py-24 bg-gradient-to-r from-blue-600 to-blue-800 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 1440 320">
+                <path fill="currentColor" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,128C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                Ready to Elevate Your Photography?
+            </h2>
+            <p class="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Join thousands of professional photographers who trust our LED Lightbox Kit for their most important projects
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://lpk.com" class="btn-primary bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Get Your Kit Today <i class="fas fa-shopping-cart ml-2"></i>
+                </a>
+                <button class="btn-primary bg-blue-700 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white">
+                    Watch Demo Video <i class="fas fa-video ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About LED Lightbox Kit
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    Our Story and Mission
+                </p>
+            </div>
+
+            <div class="space-y-8 md:space-y-10">
+                <!-- First Paragraph: Company History -->
+                <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-8 md:p-10 rounded-2xl border border-blue-200">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Our Heritage</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Founded in 2015 by a team of professional photographers frustrated with expensive, cumbersome studio equipment, LED Lightbox Kit was born from a simple vision: democratize professional-grade lighting for creators everywhere. What started as a small workshop project evolved into a thriving company dedicated to designing innovative lighting solutions. Over the past eight years, we've perfected our craft, investing heavily in research and development to create the most reliable, efficient, and user-friendly LED lighting systems on the market. Today, our products are trusted by over 50,000 photographers, videographers, and content creators across 120 countries, from hobbyists just starting their journey to established studios and production companies.
+                    </p>
+                </div>
+
+                <!-- Second Paragraph: Company Mission -->
+                <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-8 md:p-10 rounded-2xl border border-purple-200">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Our Mission & Values</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        At LED Lightbox Kit, we're committed to empowering creators by providing world-class lighting equipment that combines affordability, portability, and professional-grade performance. Our mission extends beyond selling products; we believe in fostering a community of passionate photographers and videographers. We're dedicated to sustainability, using eco-friendly materials and energy-efficient technology in all our products. Our core values—innovation, quality, accessibility, and environmental responsibility—guide every decision we make. We stand behind our products with comprehensive warranties, exceptional customer support, and continuous innovation to ensure our customers always have the tools they need to bring their creative visions to life.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-16">
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">50K+</div>
+                    <p class="text-gray-700 font-semibold">Happy Customers</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <div class="text-4xl md:text-5xl font-bold text-purple-600 mb-2">120+</div>
+                    <p class="text-gray-700 font-semibold">Countries Served</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <div class="text-4xl md:text-5xl font-bold text-green-600 mb-2">8+</div>
+                    <p class="text-gray-700 font-semibold">Years in Business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    What Our Customers Say
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Real testimonials from professional photographers and content creators
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md hover:shadow-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 font-semibold">(5.0)</span>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        "This LED Lightbox Kit completely transformed my photography business. The color accuracy is incredible, and I've saved thousands on electricity costs. I've used it for product photography, portraits, and video content. It's portable enough to take to client locations but delivers studio-quality results every single time. Absolutely worth the investment!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            SA
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Anderson</p>
+                            <p class="text-gray-600 text-sm">Professional Photographer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md hover:shadow-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 font-semibold">(5.0)</span>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        "As a content creator, I needed reliable lighting that wouldn't break the bank. The LED Lightbox Kit exceeded all my expectations. Setup takes literally five minutes, the quality is professional-grade, and the battery life is impressive. I've shot 200+ TikTok videos and YouTube content with this kit, and every single one looks amazing. The customer support team is also fantastic!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            MJ
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Marcus Johnson</p>
+                            <p class="text-gray-600 text-sm">Content Creator & YouTuber</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md hover:shadow-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 font-semibold">(5.0)</span>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        "I run a small product photography studio, and this kit has been a game-changer for my business. The consistency of the lighting across shoots means I spend less time color-correcting in post-production. I've increased my client capacity by 40% since switching to this system. Plus, the energy savings have actually paid for the kit in just six months!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            ER
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Emily Rodriguez</p>
+                            <p class="text-gray-600 text-sm">Studio Owner, Product Photography</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md hover:shadow-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 font-semibold">(5.0)</span>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        "I was skeptical about buying LED lighting without trying it first, but the 30-day money-back guarantee gave me confidence. I'm so glad I took the chance. The quality is exceptional, and I use it for both photography and video work. The flicker-free technology is perfect for my YouTube channel. I've recommended it to at least 15 other creators, and they all love it!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            DK
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">David Kim</p>
+                            <p class="text-gray-600 text-sm">Videographer & Online Educator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    Everything you need to know about the LED Lightbox Kit
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors duration-300 text-left">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900">What is the color temperature range of the LED Lightbox Kit?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 text-lg"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6 md:px-8 py-4 md:py-6 border-t border-gray-200">
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            The LED Lightbox Kit features an adjustable color temperature range from 3200K to 5600K, allowing you to match any lighting environment. At 3200K, you get warm, tungsten-like tones perfect for indoor portraits and intimate settings. At 5600K, you achieve daylight-balanced lighting ideal for outdoor photography and general studio work. The smooth transition between these temperatures gives you complete creative control over the mood and atmosphere of your photographs. This versatility makes it suitable for virtually any photography scenario, from warm candlelit portraits to cool, crisp product shots.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors duration-300 text-left">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900">How long does the battery last on a single charge?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 text-lg"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6 md:px-8 py-4 md:py-6 border-t border-gray-200">
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            The built-in lithium-ion battery provides up to 8 hours of continuous operation at full brightness on a single charge. If you're running at 50% brightness, you can extend the runtime to approximately 12-14 hours, making it ideal for full-day shoots. The battery charges completely in just 2-3 hours using the included USB-C fast charger. For extended sessions or backup power, we recommend purchasing our optional extended battery pack, which doubles your runtime. The intelligent battery management system provides real-time status indicators on the control panel, so you always know how much power you have remaining.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors duration-300 text-left">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900">Is the LED Lightbox Kit suitable for video production?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 text-lg"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6 md:px-8 py-4 md:py-6 border-t border-gray-200">
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Absolutely! The LED Lightbox Kit is excellent for video production. Our flicker-free technology operates at 50Hz/60Hz frequency, ensuring smooth, flicker-free footage at any frame rate, from 24fps cinema to 120fps slow-motion. The consistent, cool-running LED output means you can shoot for hours without heat concerns or color shifts. The adjustable brightness and color temperature allow you to match ambient lighting or create cinematic effects. Many professional videographers use our kit for YouTube production, corporate videos, live streaming, interviews, and independent film work. The quiet operation also means no interference with your audio recording.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors duration-300 text-left">
+                        <span class="text-lg md:text-xl font-semibold text-gray-900">What warranty and support do you offer?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 text-lg"></i>
+                    </button>
+                    <div class="faq-content bg-white px-6 md:px-8 py-4 md:py-6 border-t border-gray-200">
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Every LED Lightbox Kit comes with a comprehensive 3-year manufacturer's warranty covering all defects in materials and workmanship. We also offer a 30-day money-back guarantee if you're not completely satisfied with your purchase. Our dedicated customer support team is available via email at admin@lpk.com, responding to inquiries within 24 hours. We provide free technical support, troubleshooting assistance, and detailed guides for setup and optimization. For customers outside the warranty period, we offer affordable extended protection plans. Additionally, we maintain an extensive online knowledge base with video tutorials, FAQs, and troubleshooting guides to help you get the most out of your kit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Get in Touch
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    Have questions? We'd love to hear from you
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-200">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="How can we help?" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your inquiry..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-600 text-2xl mt-1"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Email</h3>
+                                <p class="text-gray-600 mt-1">
+                                    <a href="mailto:admin@lpk.com" class="text-blue-600 hover:text-blue-700 font-medium">admin@lpk.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-globe text-blue-600 text-2xl mt-1"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Website</h3>
+                                <p class="text-gray-600 mt-1">
+                                    <a href="https://lpk.com" class="text-blue-600 hover:text-blue-700 font-medium">lpk.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1: Company Info -->
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4 flex items-center">
+                        <i class="fas fa-lightbulb text-blue-500 mr-2"></i>LED Lightbox Kit
+                    </h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Professional LED lighting solutions for photographers and content creators worldwide. Studio quality, portable, and energy-efficient.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Support -->
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#faq" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Contact Us</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-blue-500 mr-3 mt-1"></i>
+                            <a href="mailto:admin@lpk.com" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">admin@lpk.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-globe text-blue-500 mr-3 mt-1"></i>
+                            <a href="https://lpk.com" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">lpk.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-shipping-fast text-blue-500 mr-3 mt-1"></i>
+                            <span class="text-gray-400">Fast Worldwide Shipping</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-shield-alt text-blue-500 mr-3 mt-1"></i>
+                            <span class="text-gray-400">100% Satisfaction Guarantee</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 my-8"></div>
+
+            <!-- Bottom Footer -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm text-center md:text-left mb-4 md:mb-0">
+                    &copy; <span id="year">2024</span> LED Lightbox Kit. All rights reserved.
+                </p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="privacy.html" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Terms of Service</a>
+                    <a href="blog.html" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const faqItem = toggle.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Update year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+</html>
